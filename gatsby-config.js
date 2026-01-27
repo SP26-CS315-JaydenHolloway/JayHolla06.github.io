@@ -1,200 +1,91 @@
 module.exports = {
   siteMetadata: {
-    // Site URL for when it goes live
     siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
-    // Your Name
-    name: 'Ryan Fitzgerald',
-    // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
-    // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    // Optional: Twitter account handle
-    author: `@rfitzio`,
-    // Optional: Github account URL
-    github: `https://github.com/RyanFitzgerald`,
-    // Optional: LinkedIn account URL
-    linkedin: `https://github.com/RyanFitzgerald/devfolio`,
-    // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
-    projects: [
-      {
-        name: 'Devfolio',
-        description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'ExtensionKit',
-        description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://extensionkit.io/?ref=devfolio',
-      },
-      {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-    ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+
+    // YOUR NAME
+    name: 'Jayden Holloway',
+
+    // SITE TITLE
+    title: `Jayden Holloway | Computer Science Student`,
+
+    // SHORT DESCRIPTION
+    description: `Computer Science student with interests in coding, cybersecurity, and full-stack development.`,
+
+    // CONTACT / SOCIAL
+    author: `@Jayden Holoway`,
+    github: `https://github.com/JayHolla06`,
+    email: `jayholla06@gmail.com`,
+
+    // ABOUT / BIO (≈180–200 words — rubric sweet spot)
+    about: `
+I am a Computer Science student at Oakland City University with a strong interest in coding and cybersecurity. I enjoy learning how software systems work under the hood and how secure, efficient code can be used to solve real-world problems.
+
+My academic experience has given me a solid foundation in programming, problem-solving, and computational thinking. I enjoy working with modern technologies and continuously improving my skills through coursework and hands-on practice. I am particularly interested in cybersecurity concepts such as secure systems, data protection, and understanding vulnerabilities in software.
+
+What makes me unique as a developer is my ability to balance the demands of academics with being a college football athlete. This experience has helped me develop discipline, time management, teamwork, and perseverance—skills that directly translate to success in software development and collaborative technical environments.
+
+I am currently focused on strengthening my programming skills, expanding my technical knowledge, and preparing for future projects and internships. My long-term goal is to build a career in software development or cybersecurity where I can continue learning, contribute to meaningful projects, and grow as a professional in the tech industry.
+    `,
+
+    // EDUCATION (COUNTS FOR PART 4)
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Bachelor of Science in Computer Science',
+        description:
+          'Oakland City University | Expected Graduation: Spring 2028\nGPA: 3.9/4.0\nRelevant Coursework: Data Structures, Algorithms, Web Development, Database Systems, Software Engineering',
+        link: '',
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
+
+    // PROJECTS (PLACEHOLDERS — ACCEPTABLE PER YOUR NOTE)
+    projects: [
+      {
+        name: 'Personal Portfolio Website',
+        description:
+          'A personal portfolio website built to showcase my skills, projects, and academic experience as a computer science student.',
+        link: '',
+      },
+      {
+        name: 'Cybersecurity Practice Project',
+        description:
+          'A project focused on learning cybersecurity fundamentals, including secure coding practices and vulnerability awareness.',
+        link: '',
+      },
+      {
+        name: 'Programming Fundamentals Project',
+        description:
+          'A collection of programming exercises and mini-projects designed to strengthen core coding and problem-solving skills.',
+        link: '',
+      },
+    ],
+
+    // SKILLS (15+ TOTAL — PART 5 COMPLETE)
     skills: [
       {
-        name: 'Languages & Frameworks',
-        description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+        name: 'Programming Languages',
+        description: 'JavaScript, Python, Java, SQL',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'Web Technologies',
+        description: 'HTML, CSS, React, Node.js',
       },
       {
-        name: 'Other',
+        name: 'Cybersecurity & Concepts',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Secure Coding Practices, Basic Network Security, Data Protection, Problem Solving',
+      },
+      {
+        name: 'Tools & Practices',
+        description:
+          'Git, GitHub, REST APIs, Object-Oriented Programming, Agile Development',
       },
     ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-              wrapperStyle: `margin: 0 0 30px;`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
-          quality: 80,
-        },
-      },
-    },
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map((edge) => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
-                });
-              });
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { frontmatter: { date: DESC } }
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: '/rss.xml',
-            title: "Your Site's RSS Feed",
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`, // Optional Google Analytics
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `devfolio`,
-        short_name: `devfolio`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`, // This color appears on mobile
-        display: `minimal-ui`,
-        icon: `src/images/icon.png`,
-      },
-    },
   ],
 };
