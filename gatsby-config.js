@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
+    siteUrl: `https://SP26-CS315-JaydenHolloway.github.io`,
 
     // YOUR NAME
     name: 'Jayden Holloway',
