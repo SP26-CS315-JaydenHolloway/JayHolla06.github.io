@@ -1,9 +1,6 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
-    module.exports = {
-  pathPrefix: "/reponame",
-}
 
     // YOUR NAME
     name: 'Jayden Holloway',
